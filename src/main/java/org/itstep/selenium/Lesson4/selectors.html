@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectors</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+
+        #two {
+            background-color: chartreuse;
+        }
+
+        .red {
+            background-color: crimson;
+        }
+
+        #one {
+            background-color: aqua;
+        }
+
+        h2 {
+            background-color: blueviolet;
+        }
+
+        /* > обращается к прямым наследникам*/
+        /* + обращается к первому соседу*/
+        /* ~ обращается ко всем соседним эл-там*/
+
+        div section p {
+            color: red;
+        }
+
+        div ul {
+            list-style: none;
+        }
+
+        div a {
+            text-decoration: none;
+            color: orangered;
+        }
+
+        div li:nth-child(2n) {
+            background-color: blue;
+        }
+
+        li:nth-child(2n) {
+            background-color: red;
+        }
+
+        div:nth-of-type(2n){
+            color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>
+        Test page
+    </h1>
+    <h2 id="one">
+        Description
+    </h2>
+
+</header>
+<nav>
+    <ul>
+        <li><a href="http://google.com">Google link</a></li>
+    </ul>
+</nav>
+<main>
+    <article>
+        <header>
+            <h2 class="red" id="two">
+                Header for article 1
+            </h2>
+            <h2 class="red">
+                Header for article 2
+            </h2>
+            <h2 class="red">
+                Header for article 3
+            </h2>
+            <h2>
+                Header for article 4
+            </h2>
+        </header>
+
+
+        <div>Div
+            <p>Paragraph #1</p>
+            <p>Paragraph #2
+                <section>Section
+            <p>Paragraph #3</p>
+            </section>
+            </p>
+        </div>
+        <p>Paragraph #4</p>
+        <p>Paragraph #5</p>
+        <p>Paragraph #6</p>
+        <p>Paragraph #7</p>
+
+        <div>
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div>
+        <ul>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+        </ul>
+
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad, consequuntur dolor error ex explicabo
+            facilis, id iusto magni nam odit officia perferendis provident quibusdam sed ullam veniam voluptate
+            voluptatum!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad, consequuntur dolor error ex explicabo
+            facilis, id iusto magni nam odit officia perferendis provident quibusdam sed ullam veniam voluptate
+            voluptatum!
+        </div>
+        <p></p>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad, consequuntur dolor error ex explicabo
+            facilis, id iusto magni nam odit officia perferendis provident quibusdam sed ullam veniam voluptate
+            voluptatum!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad, consequuntur dolor error ex explicabo
+            facilis, id iusto magni nam odit officia perferendis provident quibusdam sed ullam veniam voluptate
+            voluptatum!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad, consequuntur dolor error ex explicabo
+            facilis, id iusto magni nam odit officia perferendis provident quibusdam sed ullam veniam voluptate
+            voluptatum!
+        </div>
+    </article>
+</main>
+</body>
+</html>
