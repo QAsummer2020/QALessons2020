@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 
 import java.io.IOException;
 import java.security.Key;
@@ -19,6 +20,8 @@ public class ActionsTest {
         String str = "C:\\Users\\Lukashyk\\IdeaProjects\\SeleniumQA2020\\src\\main\\resources\\actions.html";
         webDriver.get(str);
         Actions actions = new Actions(webDriver);
+
+
         try {
             List<WebElement> li = webDriver.findElements(By.tagName("li"));//получаю список всех элемнтов
             actions
