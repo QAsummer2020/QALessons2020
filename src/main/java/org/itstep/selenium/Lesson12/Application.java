@@ -1,10 +1,8 @@
 package org.itstep.selenium.Lesson12;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-
-import java.awt.*;
 
 public class Application {
         public static void main(String[] args)  {
@@ -15,6 +13,8 @@ public class Application {
 
 
             System.out.println("End test");
+
+            Assert.assertEquals("10", "10");
 
 
 

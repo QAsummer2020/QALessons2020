@@ -71,8 +71,15 @@ public class ApplicationTest {
     public void testHeaderWebDriverWait(){
         WebDriverWait webDriverWait = new WebDriverWait(webDriver, 15);
         WebElement h1 = webDriverWait.until(webDriver -> webDriver.findElement(By.tagName("h1")));
+
+        WebElement blue = webDriverWait.until(webDriver -> webDriver.findElement(By.className(".blue")));
+
         Assert.assertEquals("Hello selenium", h1.getText());
+        Assert.assertTrue(blue.isDisplayed());
     }
+
+
+
 
 
     @After
